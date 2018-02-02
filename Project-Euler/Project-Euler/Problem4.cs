@@ -17,7 +17,6 @@ namespace Project_Euler
             public int Num2 { get; set; }
 
             public int PalindromeNum { get; set; }
-
         }
 
         public int ReverseNum(int numInput)
@@ -36,8 +35,7 @@ namespace Project_Euler
 
         public void ReturnResult()
         {
-            
-        int CalcNum = 0;
+            int CalcNum = 0;
             for(int count1 = 999; count1 > 100; count1--)
             {
                 for(int count2 = 999; count2 > 100; count2--)
@@ -67,7 +65,7 @@ namespace Project_Euler
                     largestIndex = i;
                 }
             }
-            
+
             Console.WriteLine(PalindromeList[largestIndex].Num1 + " * " + PalindromeList[largestIndex].Num2 + " results in the palindrome Number " + largestPalindrome);
         }
     }
