@@ -1,0 +1,6 @@
+c:\users\developer\documents\visual studio 2015\Projects\Project-Euler\Project-Euler\bin\Debug\Project-Euler.exe.config
+c:\users\developer\documents\visual studio 2015\Projects\Project-Euler\Project-Euler\bin\Debug\Project-Euler.exe
+c:\users\developer\documents\visual studio 2015\Projects\Project-Euler\Project-Euler\bin\Debug\Project-Euler.pdb
+c:\users\developer\documents\visual studio 2015\Projects\Project-Euler\Project-Euler\obj\Debug\Project-Euler.csprojResolveAssemblyReference.cache
+c:\users\developer\documents\visual studio 2015\Projects\Project-Euler\Project-Euler\obj\Debug\Project-Euler.exe
+c:\users\developer\documents\visual studio 2015\Projects\Project-Euler\Project-Euler\obj\Debug\Project-Euler.pdb
