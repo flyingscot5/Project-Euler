@@ -10,7 +10,7 @@ namespace Project_Euler
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Select Which problem to run \nProblem1: 1 \nProblem2: 2 \nProblem3: 3 \nProblem4: 4 \nProblem5: 5 \nProblem6: 6 \nProblem7: 7");
+            Console.WriteLine("Select Which problem to run \nProblem1: 1 \nProblem2: 2 \nProblem3: 3 \nProblem4: 4 \nProblem5: 5 \nProblem6: 6 \nProblem7: 7 \nProblem8: 8");
 
             string userInput = Console.ReadLine();
 
@@ -44,6 +44,10 @@ namespace Project_Euler
                 case "7":
                     var problem7 = new Problem7();
                     problem7.ReturnResult();
+                    break;
+                case "8":
+                    var problem8 = new Problem8();
+                    problem8.ReturnResult();
                     break;
                 default:
                     Console.WriteLine("Invalid Input!");
