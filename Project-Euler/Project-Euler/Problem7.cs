@@ -36,20 +36,18 @@ namespace Project_Euler
 
             while(!allPrimes)
             {
-                if (primeCount >= 10001)
+                if(primeCount >= 10001)
                 {
                     finalePrime = count;
                     allPrimes = true;
                 }
 
                 ++count;
-                
-                if (IsPrime(count))
+
+                if(IsPrime(count))
                 {
                     ++primeCount;
                 }
-
-
             }
 
             Console.WriteLine("The 10001 Prime Number is " + finalePrime);

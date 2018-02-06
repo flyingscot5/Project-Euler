@@ -8,7 +8,6 @@ namespace Project_Euler
 {
     class Problem6
     {
-
         public void ReturnResult()
         {
             int sumOfSquare = 0;
@@ -20,7 +19,7 @@ namespace Project_Euler
                 sumOfSquare += i*i;
                 sumOfNatural += i;
             }
-            
+
             sumOfNatural *= sumOfNatural;
 
             result = sumOfNatural - sumOfSquare;
