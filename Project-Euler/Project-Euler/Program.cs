@@ -11,7 +11,9 @@ namespace Project_Euler
         public static void Main(string[] args)
         {
             Console.WriteLine("Select Which problem to run \nProblem1: 1 \nProblem2: 2 \nProblem3: 3 \nProblem4: 4 \nProblem5: 5 " +
-                              "\nProblem6: 6 \nProblem7: 7 \nProblem8: 8 \nProblem9: 9 \nProblem10: 10 \nProblem11: 11 \nProblem12: 12 \nProblem13: 13");
+                              "\nProblem6: 6 \nProblem7: 7 \nProblem8: 8 \nProblem9: 9 \nProblem10: 10 \nProblem11: 11  \nProblemV2: 11V2 " +
+                              "\nProblem12: 12 \nProblem13: 13  \nProblemV2: 13V2 \nProblem15: 14 \nProblem15: 15 \nProblem16: 16 \nProblem17: 17" +
+                              " \nProblem18: 18 \nProblem19: 19 \nProblem20: 20");
 
             string userInput = Console.ReadLine();
 
@@ -62,6 +64,10 @@ namespace Project_Euler
                     var problem11 = new Problem11();
                     problem11.ReturnResult();
                     break;
+                case "11V2":
+                    var problem11V2 = new Problem11V2();
+                    problem11V2.ReturnResult();
+                    break;
                 case "12":
                     var problem12 = new Problem12();
                     problem12.ReturnResult();
@@ -69,6 +75,30 @@ namespace Project_Euler
                 case "13":
                     var problem13 = new Problem13();
                     problem13.ReturnResult();
+                    break;
+                case "13V2":
+                    var problem13V2 = new Problem13V2();
+                    problem13V2.ReturnResult();
+                    break;
+                case "14":
+                    var problem14 = new Problem14();
+                    problem14.ReturnResult();
+                    break;
+                case "15":
+                    var problem15 = new Problem15();
+                    problem15.ReturnResult();
+                    break;
+                case "16":
+                    var problem16 = new Problem16();
+                    problem16.ReturnResult();
+                    break;
+                case "17":
+                    var problem17 = new Problem17();
+                    problem17.ReturnResult();
+                    break;
+                case "18":
+                    var problem18 = new Problem18();
+                    problem18.ReturnResult();
                     break;
                 default:
                     Console.WriteLine("Invalid Input!");
