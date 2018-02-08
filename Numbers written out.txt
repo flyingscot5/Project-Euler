@@ -1,0 +1,64 @@
+one
+two
+three
+four
+five
+6ix
+seven
+eight
+nine
+#
+ten
+eleven
+twevel
+thirteen
+fourteen
+fifthteen
+sixteen
+eighteen
+nineteen
+
+twenty
+twentyone
+twentytwo
+twentythree
+twentyfour
+twentyfive
+twentysix
+twentyseven
+twentyeight
+twentynine
+
+thirty
+thirtyone
+
+
+
+
+...
+forty
+fortyone
+
+
+
+...
+fifty
+fiftyone
+
+
+...
+....
+
+one hundred
+one hundred and one
+one hundred and two
+
+...
+
+two hundred
+
+
+
+...
+....
+one thousand
