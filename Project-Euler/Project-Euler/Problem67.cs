@@ -54,9 +54,6 @@ namespace Project_Euler
                 var num7 = 0;
                 var num8 = 0;
                 var num9 = 0;
-                var num10 = 0;
-                var num11 = 0;
-                var num12 = 0;
                 try
                 {
                     num1 = _gridArray[currentAxis, y];
