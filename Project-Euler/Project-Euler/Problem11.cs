@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Euler
 {
@@ -47,33 +43,33 @@ namespace Project_Euler
             double greatestProduct = 0;
 
 
-            for (var startAxisY = 3; startAxisY < 17; startAxisY++)
+            for(var startAxisY = 3; startAxisY < 17; startAxisY++)
             {
-                for (var startAxisX = 3; startAxisX < 17; startAxisX++)
+                for(var startAxisX = 3; startAxisX < 17; startAxisX++)
                 {
                     double verticalTotalNeg = 1;
                     double verticalTotalPos = 1;
 
                     //Vertical Top to Bottom
-                    for (var offSet = -3; offSet <= 3; offSet++)
+                    for(var offSet = -3; offSet <= 3; offSet++)
                     {
                         var currentNum = _gridArray[startAxisX, startAxisY + offSet];
-                        if (offSet <= 0)
+                        if(offSet <= 0)
                         {
                             verticalTotalNeg *= currentNum;
                         }
-                        if (offSet >= 0)
+                        if(offSet >= 0)
                         {
                             verticalTotalPos *= currentNum;
                         }
                     }
 
-                    if (verticalTotalNeg > greatestProduct)
+                    if(verticalTotalNeg > greatestProduct)
                     {
                         greatestProduct = verticalTotalNeg;
                     }
 
-                    if (verticalTotalPos > greatestProduct)
+                    if(verticalTotalPos > greatestProduct)
                     {
                         greatestProduct = verticalTotalPos;
                     }
@@ -82,25 +78,25 @@ namespace Project_Euler
                     double horizontalTotalPos = 1;
 
                     //Horizontal left to right
-                    for (var offSet = -3; offSet <= 3; offSet++)
+                    for(var offSet = -3; offSet <= 3; offSet++)
                     {
                         var currentNum = _gridArray[startAxisX + offSet, startAxisY];
-                        if (offSet <= 0)
+                        if(offSet <= 0)
                         {
                             horizontalTotalNeg *= currentNum;
                         }
-                        if (offSet >= 0)
+                        if(offSet >= 0)
                         {
                             horizontalTotalPos *= currentNum;
                         }
                     }
 
-                    if (horizontalTotalNeg > greatestProduct)
+                    if(horizontalTotalNeg > greatestProduct)
                     {
                         greatestProduct = horizontalTotalNeg;
                     }
 
-                    if (horizontalTotalPos > greatestProduct)
+                    if(horizontalTotalPos > greatestProduct)
                     {
                         greatestProduct = horizontalTotalPos;
                     }
@@ -109,25 +105,25 @@ namespace Project_Euler
                     double diagonalLeftTotalPos = 1;
 
                     //Diagonal Top Left to Bottom Right
-                    for (var offSet = -3; offSet <= 3; offSet++)
+                    for(var offSet = -3; offSet <= 3; offSet++)
                     {
                         var currentNum = _gridArray[startAxisX + offSet, startAxisY + offSet];
-                        if (offSet <= 0)
+                        if(offSet <= 0)
                         {
                             diagonalLeftTotalNeg *= currentNum;
                         }
-                        if (offSet >= 0)
+                        if(offSet >= 0)
                         {
                             diagonalLeftTotalPos *= currentNum;
                         }
                     }
 
-                    if (diagonalLeftTotalNeg > greatestProduct)
+                    if(diagonalLeftTotalNeg > greatestProduct)
                     {
                         greatestProduct = diagonalLeftTotalNeg;
                     }
 
-                    if (diagonalLeftTotalPos > greatestProduct)
+                    if(diagonalLeftTotalPos > greatestProduct)
                     {
                         greatestProduct = diagonalLeftTotalPos;
                     }
@@ -137,32 +133,32 @@ namespace Project_Euler
                     double diagonalRightTotalPos = 1;
 
                     //Diagonal Top Right to Bottom Left
-                    for (var offSet = -3; offSet <= 3; offSet++)
+                    for(var offSet = -3; offSet <= 3; offSet++)
                     {
                         var currentNum = _gridArray[startAxisX - offSet, startAxisY + offSet];
-                        if (offSet <= 0)
+                        if(offSet <= 0)
                         {
                             diagonalRightTotalNeg *= currentNum;
                         }
-                        if (offSet >= 0)
+                        if(offSet >= 0)
                         {
                             diagonalRightTotalPos *= currentNum;
                         }
                     }
 
-                    if (diagonalRightTotalNeg > greatestProduct)
+                    if(diagonalRightTotalNeg > greatestProduct)
                     {
                         greatestProduct = diagonalRightTotalNeg;
                     }
 
-                    if (diagonalRightTotalPos > greatestProduct)
+                    if(diagonalRightTotalPos > greatestProduct)
                     {
                         greatestProduct = diagonalRightTotalPos;
                     }
                 }
             }
 
-            Console.WriteLine("The Greatest Product is " + greatestProduct);
+            Console.WriteLine("Problem 11:\nThe Greatest Product is " + greatestProduct);
         }
     }
 }

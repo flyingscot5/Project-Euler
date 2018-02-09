@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Euler
 {
@@ -20,19 +15,19 @@ namespace Project_Euler
                 divisors = 0;
                 total += i;
                 i++;
-                
+
                 int current = (int)Math.Sqrt(total);
-                for (int J = 1; J < current; J++)
+                for(int J = 1; J < current; J++)
                 {
-                    if (total % J == 0)
+                    if(total%J == 0)
                         divisors += 2;
                 }
-                if(current * current == total)
+                if(current*current == total)
                 {
                     divisors++;
                 }
             }
-            Console.WriteLine("First Triangle with over 500 divisors is " + total + " and has " + divisors + " divisors");
+            Console.WriteLine("Problem 12:\nFirst Triangle with over 500 divisors is " + total + " and has " + divisors + " divisors");
         }
     }
 }

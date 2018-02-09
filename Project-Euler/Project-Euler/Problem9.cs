@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Euler
 {
@@ -21,7 +17,7 @@ namespace Project_Euler
                     var c = 1000 - A - B;
 
                     if(leftOver != c*c) continue;
-                    Console.WriteLine(A + " " + B + " " + c);
+                    Console.WriteLine("Problem 9:\n" + A + " " + B + " " + c);
                     Console.WriteLine("Product of abc is " + ( A*B*c ));
                 }
             }

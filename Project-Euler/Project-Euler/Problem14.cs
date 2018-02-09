@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Euler
 {
@@ -16,7 +11,6 @@ namespace Project_Euler
         {
             for(double n = 0; n < 1000000; n++)
             {
-                
                 double currentNum = n;
                 double counter = 1;
 
@@ -39,7 +33,7 @@ namespace Project_Euler
                     LargestChain = counter;
                 }
             }
-            Console.WriteLine("Largest Term Chain is " + LargestChain + " Starting Num was " + LargestChainNum);
+            Console.WriteLine("Problem 14:\nLargest Term Chain is " + LargestChain + " Starting Num was " + LargestChainNum);
         }
     }
 }

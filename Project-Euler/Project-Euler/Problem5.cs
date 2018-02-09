@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Euler
 {
@@ -10,31 +6,31 @@ namespace Project_Euler
     {
         public void ReturnResult()
         {
-            int counter = 0;
+            int counter = 20;
 
             bool allDividable = false;
 
-            while (!allDividable)
+            while(!allDividable)
             {
                 ++counter;
 
                 bool isDividable = true;
 
-                for (var i = 1; i <= 20; i++)
+                for(var i = 2; i <= 20; i++)
                 {
-                    if (counter % i != 0)
+                    if(counter%i != 0)
                     {
                         isDividable = false;
                         break;
                     }
                 }
 
-                if (isDividable)
+                if(isDividable)
                 {
                     allDividable = true;
                 }
             }
-            Console.WriteLine("Dividable by 1 to 20 is " + counter);
+            Console.WriteLine("Problem 5:\nDividable by 1 to 20 is " + counter);
         }
     }
 }

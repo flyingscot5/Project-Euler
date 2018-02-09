@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Euler
 {
@@ -42,9 +37,8 @@ namespace Project_Euler
                 {
                     bigestMultiple = currentTotal;
                 }
-                Console.WriteLine(currentTotal);
             }
-            Console.WriteLine("The Biggest Multiple Is " + bigestMultiple);
+            Console.WriteLine("Problem 8:\nThe Biggest Multiple Is " + bigestMultiple);
         }
     }
 }

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Euler
 {
@@ -66,7 +63,7 @@ namespace Project_Euler
                 }
             }
 
-            Console.WriteLine(PalindromeList[largestIndex].Num1 + " * " + PalindromeList[largestIndex].Num2 + " results in the palindrome Number " + largestPalindrome);
+            Console.WriteLine("Problem 4:\n" + PalindromeList[largestIndex].Num1 + " * " + PalindromeList[largestIndex].Num2 + " results in the palindrome Number " + largestPalindrome);
         }
     }
 }

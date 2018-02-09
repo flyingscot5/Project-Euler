@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Euler
 {
@@ -23,11 +19,11 @@ namespace Project_Euler
             int inputNumIndex = 0;
 
 
-            for (var y = 0; y < GridHeight; y++)
+            for(var y = 0; y < GridHeight; y++)
             {
-                for (var x = 0; x < GridWidth; x++)
+                for(var x = 0; x < GridWidth; x++)
                 {
-                    if (x == 0 && y != 0)
+                    if(x == 0 && y != 0)
                     {
                         inputNumIndex += 20;
                     }
@@ -43,9 +39,9 @@ namespace Project_Euler
         {
             InsertToArray();
 
-            for (int y = 0; y < GridHeight; y++)
+            for(int y = 0; y < GridHeight; y++)
             {
-                for (int x = 0; x < GridWidth; x++)
+                for(int x = 0; x < GridWidth; x++)
                 {
                     Console.WriteLine(FindAdjacentNums(x, y, OffsetType.Negative, OffsetType.None));
                 }
@@ -64,7 +60,7 @@ namespace Project_Euler
             var output = 1;
             var greatestProduct = 0;
 
-            for (var offSet = 0; offSet <= 3; offSet++)
+            for(var offSet = 0; offSet <= 3; offSet++)
             {
                 try
                 {
@@ -72,12 +68,12 @@ namespace Project_Euler
                     var xWithOffsetApplied = x;
                     output *= _gridArray[xWithOffsetApplied, yWithOffsetApplied];
                 }
-                catch (Exception)
+                catch(Exception)
                 {
                 }
             }
 
-            if (output > greatestProduct)
+            if(output > greatestProduct)
             {
                 greatestProduct = output;
             }
@@ -92,19 +88,19 @@ namespace Project_Euler
 
             //mid to top
 
-            for (var offSet = 3; offSet >= 0; offSet--)
+            for(var offSet = 3; offSet >= 0; offSet--)
             {
                 try
                 {
                     output *= _gridArray[x, y - offSet];
                 }
-                catch (Exception)
+                catch(Exception)
                 {
                     // ignored
                 }
             }
 
-            if (output > greatestProduct)
+            if(output > greatestProduct)
             {
                 greatestProduct = output;
             }
@@ -114,19 +110,19 @@ namespace Project_Euler
 
             //mid to bot
 
-            for (var offSet = 0; offSet <= 3; offSet++)
+            for(var offSet = 0; offSet <= 3; offSet++)
             {
                 try
                 {
                     output *= _gridArray[x, y + offSet];
                 }
-                catch (Exception)
+                catch(Exception)
                 {
                     // ignored
                 }
             }
 
-            if (output > greatestProduct)
+            if(output > greatestProduct)
             {
                 greatestProduct = output;
             }
@@ -136,18 +132,18 @@ namespace Project_Euler
 
             //mid to left
 
-            for (var offSet = 3; offSet >= 0; offSet--)
+            for(var offSet = 3; offSet >= 0; offSet--)
             {
                 try
                 {
                     output *= _gridArray[x - offSet, y];
                 }
-                catch (Exception)
+                catch(Exception)
                 {
                 }
             }
 
-            if (output > greatestProduct)
+            if(output > greatestProduct)
             {
                 greatestProduct = output;
             }
@@ -156,18 +152,18 @@ namespace Project_Euler
 
 
             //mid to right
-            for (var offSet = 0; offSet <= 3; offSet++)
+            for(var offSet = 0; offSet <= 3; offSet++)
             {
                 try
                 {
                     output *= _gridArray[x + offSet, y];
                 }
-                catch (Exception)
+                catch(Exception)
                 {
                 }
             }
 
-            if (output > greatestProduct)
+            if(output > greatestProduct)
             {
                 greatestProduct = output;
             }
@@ -177,18 +173,18 @@ namespace Project_Euler
 
             //mid to top left
 
-            for (var offSet = 3; offSet >= 0; offSet--)
+            for(var offSet = 3; offSet >= 0; offSet--)
             {
                 try
                 {
                     output *= _gridArray[x - offSet, y - offSet];
                 }
-                catch (Exception)
+                catch(Exception)
                 {
                 }
             }
 
-            if (output > greatestProduct)
+            if(output > greatestProduct)
             {
                 greatestProduct = output;
             }
@@ -198,18 +194,18 @@ namespace Project_Euler
 
             //mid to top right
 
-            for (var offSet = 0; offSet <= 3; offSet++)
+            for(var offSet = 0; offSet <= 3; offSet++)
             {
                 try
                 {
                     output *= _gridArray[x + offSet, y - offSet];
                 }
-                catch (Exception)
+                catch(Exception)
                 {
                 }
             }
 
-            if (output > greatestProduct)
+            if(output > greatestProduct)
             {
                 greatestProduct = output;
             }
@@ -218,18 +214,18 @@ namespace Project_Euler
 
             //mid to bot left
 
-            for (var offSet = 3; offSet >= 0; offSet--)
+            for(var offSet = 3; offSet >= 0; offSet--)
             {
                 try
                 {
                     output *= _gridArray[x - offSet, y + offSet];
                 }
-                catch (Exception)
+                catch(Exception)
                 {
                 }
             }
 
-            if (output > greatestProduct)
+            if(output > greatestProduct)
             {
                 greatestProduct = output;
             }
@@ -238,18 +234,18 @@ namespace Project_Euler
 
 
             //mid to bot right
-            for (var offSet = 0; offSet <= 3; offSet++)
+            for(var offSet = 0; offSet <= 3; offSet++)
             {
                 try
                 {
                     output *= _gridArray[x + offSet, y + offSet];
                 }
-                catch (Exception)
+                catch(Exception)
                 {
                 }
             }
 
-            if (output > greatestProduct)
+            if(output > greatestProduct)
             {
                 greatestProduct = output;
             }

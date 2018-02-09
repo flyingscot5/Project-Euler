@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Euler
 {
@@ -80,23 +78,19 @@ namespace Project_Euler
                         break;
                     case 1:
                         biggerNum = num1;
-                        currentAxis++;
                         break;
                     case 2:
                         biggerNum = num2;
                         currentAxis++;
-
                         break;
                     case 3:
                         biggerNum = num2;
                         currentAxis++;
                         break;
                 }
-
-                Console.WriteLine(biggerNum);
                 total += biggerNum;
             }
-            Console.WriteLine(total);
+            Console.WriteLine("Problem 18:\nThe Maximum total from top to bottom " + total);
         }
     }
 }

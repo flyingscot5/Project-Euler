@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Euler
 {
@@ -57,7 +53,7 @@ namespace Project_Euler
             }
 
             counter += singlesTotal + patternLessTotal + doublesTotal + 7*9;
-            Console.WriteLine(counter);
+            Console.WriteLine("Problem 17:\n" + counter);
         }
     }
 }

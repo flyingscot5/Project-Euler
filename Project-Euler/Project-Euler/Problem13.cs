@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Euler
 {
@@ -21,11 +16,10 @@ namespace Project_Euler
         {
             _largerNumArray = new double[LengthOfNums, TotalNums];
 
-            for (var y = 0; y < TotalNums; y++)
+            for(var y = 0; y < TotalNums; y++)
             {
-                for (var x = 0; x < LengthOfNums; x++)
+                for(var x = 0; x < LengthOfNums; x++)
                 {
-
                     string nextNumber = InputNumbers.Split(',')[y];
                     var numArray = nextNumber.ToCharArray();
                     var nextInt = char.GetNumericValue(numArray[x]);
@@ -38,7 +32,7 @@ namespace Project_Euler
 
         public void BigIntCalc()
         {
-            for(int x = LengthOfNums-1; x >=0; x--)
+            for(int x = LengthOfNums - 1; x >= 0; x--)
             {
                 double colTotal = 0;
                 for(int y = 0; y < TotalNums; y++)
@@ -50,7 +44,6 @@ namespace Project_Euler
 
                 Console.WriteLine(colTotal);
             }
-
         }
 
 

@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Euler
 {
     public class Problem15
     {
-        public int GridHeight = 20+1;
-        public int GridWidth = 20+1;
+        public int GridHeight = 20 + 1;
+        public int GridWidth = 20 + 1;
 
         private long[,] _gridArray;
 
@@ -36,10 +32,10 @@ namespace Project_Euler
                 {
                     try
                     {
-                        long topNum = _gridArray[x, y-1];
-                        long leftNum = _gridArray[x-1, y];
+                        long topNum = _gridArray[x, y - 1];
+                        long leftNum = _gridArray[x - 1, y];
 
-                        _gridArray[x, y] = (topNum+leftNum);
+                        _gridArray[x, y] = ( topNum + leftNum );
                     }
                     catch(Exception)
                     {
@@ -48,7 +44,7 @@ namespace Project_Euler
                 }
             }
 
-            Console.WriteLine("Total number of routes is " + _gridArray[20,20]);
+            Console.WriteLine("Problem 15:\nTotal number of routes is " + _gridArray[20, 20]);
         }
     }
 }
