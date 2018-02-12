@@ -131,6 +131,10 @@ namespace Project_Euler
                         var problem22 = new Problem22();
                         problem22.ReturnResult();
                         break;
+                    case "23":
+                        var problem23 = new Problem23();
+                        problem23.ReturnResult();
+                        break;
 
 
                     case "67":
