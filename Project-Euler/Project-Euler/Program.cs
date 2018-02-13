@@ -13,7 +13,8 @@ namespace Project_Euler
                 Console.WriteLine("Select Which problem to run \nAll Problems: all \nProblem1: 1 \nProblem2: 2 \nProblem3: 3 \nProblem4: 4 \nProblem5: 5 " +
                                   "\nProblem6: 6 \nProblem7: 7 \nProblem8: 8 \nProblem9: 9 \nProblem10: 10 \nProblem11: 11  \nProblemV2: 11V2 " +
                                   "\nProblem12: 12 \nProblem13: 13  \nProblemV2: 13V2 \nProblem15: 14 \nProblem15: 15 \nProblem16: 16 \nProblem17: 17" +
-                                  " \nProblem18: 18 \nProblem19: 19 \nProblem20: 20 \nProblem21: 21 \nProblem22: 22 \nProblem23: 23 \nProblem23: 23");
+                                  " \nProblem18: 18 \nProblem19: 19 \nProblem20: 20 \nProblem21: 21 \nProblem22: 22 \nProblem23: 23 \nProblem24: 24" +
+                                  "\nProblem25: 25");
                 userInput = Console.ReadLine();
                 Console.Clear();
             }
@@ -24,7 +25,7 @@ namespace Project_Euler
 
             if(userInput == "all")
             {
-                for(int i = 1; i <= 22; i++)
+                for(int i = 1; i <= 25; i++)
                 {
                     Main(new[] {i.ToString()});
                 }
@@ -134,6 +135,14 @@ namespace Project_Euler
                     case "23":
                         var problem23 = new Problem23();
                         problem23.ReturnResult();
+                        break;
+                    case "24":
+                        var problem24 = new Problem24();
+                        problem24.ReturnResult();
+                        break;
+                    case "25":
+                        var problem25 = new Problem25();
+                        problem25.ReturnResult();
                         break;
 
 
