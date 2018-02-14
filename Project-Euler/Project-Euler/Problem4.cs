@@ -10,13 +10,11 @@ namespace Project_Euler
         public class PalindromeObj
         {
             public int Num1 { get; set; }
-
             public int Num2 { get; set; }
-
             public int PalindromeNum { get; set; }
         }
 
-        public int ReverseNum(int numInput)
+        private int Reverse(int numInput)
         {
             int reverseNum = 0;
 
@@ -30,24 +28,20 @@ namespace Project_Euler
             return reverseNum;
         }
 
-        public void ReturnResult()
+        public void LargestPalindromeProduct()
         {
-            int CalcNum = 0;
-            for(int count1 = 999; count1 > 100; count1--)
+            var CalcNum = 0;
+            for(var count1 = 999; count1 > 100; count1--)
             {
-                for(int count2 = 999; count2 > 100; count2--)
+                for(var count2 = 999; count2 > 100; count2--)
                 {
                     CalcNum = count1*count2;
-
-                    if(CalcNum == ReverseNum(CalcNum))
-                    {
+                    if(IsAPalindrome(CalcNum))
                         PalindromeList.Add(new PalindromeObj()
                         {
                             Num1 = count1,
                             Num2 = count2,
-                            PalindromeNum = CalcNum
-                        });
-                    }
+                            PalindromeNum = CalcNum });
                 }
             }
 
@@ -64,6 +58,15 @@ namespace Project_Euler
             }
 
             Console.WriteLine("Problem 4:\n" + PalindromeList[largestIndex].Num1 + " * " + PalindromeList[largestIndex].Num2 + " results in the palindrome Number " + largestPalindrome);
+        }
+
+        private bool IsAPalindrome(int number)
+        {
+            if(number == Reverse(number))
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

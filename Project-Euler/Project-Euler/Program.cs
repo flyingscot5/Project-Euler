@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace Project_Euler
 {
-    public class Program
+    public class Programa
     {
         public static void Main(string[] args)
         {
@@ -25,7 +25,7 @@ namespace Project_Euler
 
             if(userInput == "all")
             {
-                for(int i = 1; i <= 25; i++)
+                for(int i = 1; i <= 27; i++)
                 {
                     Main(new[] {i.ToString()});
                 }
@@ -50,7 +50,7 @@ namespace Project_Euler
                         break;
                     case "4":
                         var problem4 = new Problem4();
-                        problem4.ReturnResult();
+                        problem4.LargestPalindromeProduct();
                         break;
                     case "5":
                         var problem5 = new Problem5();
@@ -148,6 +148,10 @@ namespace Project_Euler
                         var problem26 = new Problem26();
                         problem26.ReturnResult();
                         break;
+                    case "27":
+                        var problem27 = new Problem27();
+                        problem27.ReturnResult();
+                        break;
 
 
                     case "67":
@@ -158,7 +162,7 @@ namespace Project_Euler
                         Console.WriteLine("Invalid Input!");
                         break;
                 }
-                Console.WriteLine("\nTook " + stopwatch.ElapsedMilliseconds + "ms\nOr " + stopwatch.ElapsedTicks + "ticks\n\n-----------------");
+                Console.WriteLine("\nTook " + stopwatch.ElapsedMilliseconds + "ms\nOr " + stopwatch.ElapsedTicks + " ticks\n\n-----------------");
             }
 
 

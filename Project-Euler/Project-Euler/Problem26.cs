@@ -10,38 +10,17 @@ namespace Project_Euler
     {
         public void ReturnResult()
         {
-            bool longestRecurring = false;
-
             var counter = 0;
-            double baseNum = 1;
-            double currentNum = 0;
 
-            int longestNumLength = 0;
-            double longestNum = 0;
-
-
-            while(!longestRecurring)
+            for(var i = 1000; i > 0; i--)
             {
-                counter++;
-                currentNum = baseNum/counter;
-
-                var currentLength = currentNum.ToString().Length;
-
-                if(currentLength > longestNumLength)
+                while(true)
                 {
-                    longestNumLength = currentLength;
-                    longestNum = currentNum;
-                    Console.WriteLine(longestNumLength);
-                }
-
-                if(longestNumLength > 100)
-                {
-                    longestRecurring = true;
+                    counter++;
+                    break;
                 }
             }
-
-            Console.WriteLine(longestNumLength);
-            Console.WriteLine(longestNum);
+            Console.WriteLine("Problem 26:\n");
         }
     }
 }

@@ -10,7 +10,8 @@ namespace Project_Euler
         {
             for(long count = 2; CalcNum > 1; count++)
             {
-                if(CalcNum%count != 0) continue;
+                if(CalcNum%count != 0)
+                    continue;
                 while(CalcNum%count == 0)
                 {
                     CalcNum /= count;
@@ -18,6 +19,7 @@ namespace Project_Euler
                 if(CalcNum == 1)
                 {
                     Console.WriteLine("Problem 3:\nThe Largest Prime Factors is " + count);
+                    break;
                 }
             }
         }
