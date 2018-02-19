@@ -18,6 +18,7 @@ namespace Project_Euler
             {
                 for(var i = 0; i < 10; i++)
                 {
+
                 }
             }
             Console.WriteLine("Problem 24:\n");
