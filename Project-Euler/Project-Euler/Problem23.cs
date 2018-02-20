@@ -42,7 +42,7 @@ namespace Project_Euler
                     }
                 }
             }
-            Console.WriteLine("Problem 23:\n");
+            Console.WriteLine("Problem 23:\n" + finalTotal);
         }
     }
 }
