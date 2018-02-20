@@ -25,7 +25,7 @@ namespace Project_Euler
 
             if(userInput == "all")
             {
-                for(int i = 1; i <= 27; i++)
+                for(int i = 1; i <= 28; i++)
                 {
                     Main(new[] {i.ToString()});
                 }
@@ -155,6 +155,14 @@ namespace Project_Euler
                     case "28":
                         var problem28 = new Problem28();
                         problem28.ReturnResult();
+                        break;
+                    case "29":
+                        var problem29 = new Problem29();
+                        problem29.ReturnResult();
+                        break;
+                    case "30":
+                        var problem30 = new Problem30();
+                        problem30.ReturnResult();
                         break;
 
                     case "67":
