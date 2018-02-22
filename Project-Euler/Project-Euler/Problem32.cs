@@ -12,12 +12,13 @@ namespace Project_Euler
         public void ReturnResult()
         {
             var result = 0;
-            
 
+            for(var i = 1; i < 10; i++)
+            {
+                result += i;
+            }
 
-
-
-            Console.WriteLine("Problem 32:\nThe sum of all tbe products is " + result);
+            Console.Write("Problem 32:\nThe result is " + result);
         }
     }
 }
